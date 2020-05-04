@@ -1,0 +1,334 @@
+*{
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #333;
+}
+
+.body{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.header{
+  background-color: #fff;
+  /* background-image: url("img/Brookings_Hall.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  width: 100%;
+  min-height: 40vw;
+}
+
+.logo-container{
+  max-width: 40%;
+}
+
+.jump-top-container{
+  /* display: none; */
+  opacity: 0;
+  width: 70px;
+  position: fixed;
+  bottom: 30px;
+  right: 15%;
+  z-index: 10;
+  color: #fff;
+  background-color: #6c757d;
+  font-size: 19px;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px 3px;
+  border: 1px solid #ccc;
+}
+
+.top-container{
+  overflow: hidden;
+}
+
+.focus-nav {
+    position: fixed;
+    z-index: 1000;
+    height: 45px;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+}
+
+.tempnav-stud {
+    top: 45%;
+    transform: translateY(-50%);
+    left: 20px;
+    position: absolute;
+}
+
+.tempnav-title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+
+.tempnav-title > h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.topnav img{
+  height: 25px;
+}
+
+.logo-overlay{
+  position: absolute;
+  z-index: 2;
+}
+
+.background-img-overlay{
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+#header-img-overlay{
+  top: 0;
+  left: 0;
+  min-height: 80vh;
+  background-color: #000;
+  opacity: 1;
+}
+
+
+#header-container{
+  min-height: 40vh;
+  background-color: #283349;
+  background-position: 50% 50%;
+  background-size: cover;
+  text-shadow: 2px 2px 8px #222;
+}
+
+#header-container h1{
+  font-family: 'Merriweather Sans', sans-serif;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffe;
+  padding: 15px;
+  margin: 0;
+}
+
+#header-year{
+  font-size: 45px;
+}
+
+#header-logo-vertical{
+  display: none;
+}
+
+#head-title{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 2px;
+  font-weight: 800;
+}
+
+
+h2{
+  padding-left: 2px;
+  margin-bottom: 0px;
+  font-family: 'Noto Serif', serif;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.letter-col p, .article-col p{
+  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.message-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-message{
+  color: #fff;
+  font-family: 'Noto Serif', serif;
+  font-weight: 900;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  /* opacity: 0; */
+}
+.intro-message img{
+  max-width: 80%;
+}
+
+#header-presents, #header-logo-container, #header-year{
+  opacity: 0;
+}
+
+.stories-container .yellow{
+  background-color: #ffe45c;
+}
+.stories-container .yellow1{
+  background-color: #ffdb24;
+}
+.stories-container .yellow2{
+  background-color: #e4e2e8;
+}
+.stories-container .yellow3{
+  background-color: #28334aff;
+}
+.stories-container .yellow4{
+  background-color: #fbe990;
+}
+
+.stories-container .row{
+  opacity: 0;
+}
+
+.story-card{
+  height: 400px;
+  cursor: pointer;
+}
+
+.story-card h1{
+  font-family: "Noto Serif", serif;
+  font-size: 1.8rem;
+}
+
+#row01{
+  /* opacity: 1 !important; */
+}
+
+#story01{
+  background: url("img/Brookings_Hall.jpg") no-repeat center;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#story01-img-overlay{
+  height: 60vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.story-card:hover{
+  background-color: #ebebeb;
+  transition: 0.2s;
+}
+.story-card a:hover{
+  text-decoration: none;
+}
+
+.selection-marker{
+  display: none;
+}
+
+.triangle-selected{
+  /* display: none; */
+  position: absolute;
+  height: 0;
+  text-align: center;
+  bottom: 8px;
+  left: calc(50% - 25px);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 32px solid #ffe45c;
+}
+
+.underline-selected{
+  /* display: none; */
+  height: 8px;
+  background-color: #ffe45c;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  width: 200px;
+}
+
+.story{
+  display: none;
+  padding: 30px 0;
+  font-size: 1.3em;
+}
+
+.story p{
+  max-width: 600px;
+}
+
+@media (max-width: 950px){
+.tempnav-title{
+  display: none;
+}
+
+.jump-top-container{
+  right: 10px;
+}
+
+
+.jumpnav-large{
+  display: none;
+}
+
+.jumpnav-small{
+  display: block;
+}
+
+}
+
+@media (max-width: 400px){
+
+#header-container h1{
+  font-size: 32px;
+}
+
+}
+
+@media (max-width: 768px){
+
+#header-logo{
+  display: none;
+}
+
+.intro-message{
+  margin: 50px 0;
+}
+
+#header-logo-vertical{
+  margin: auto;
+  display: block;
+}
+
+.outer-stories-container{
+  background-color: #ffe45c;
+}
+
+.stories-container{
+  background-color: #fff;
+}
+
+.story-card{
+  border-top: 5px solid #ffe45c;
+}
+
+}
+
+footer{
+  background-color: #333;
+  color: #eee;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer .row{
+  margin-bottom: 0 !important;
+}
